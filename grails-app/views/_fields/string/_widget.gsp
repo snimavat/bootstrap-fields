@@ -4,10 +4,15 @@
 </g:if>
 <g:else>
     <g:if test="${constraints.password}">
-        <input type="password" id="${property}" name="${prefix}${property}" value="${value}" class="form-control ${clazz}"/>
+        <input type="password" id="${property}" name="${prefix}${property}" value="${value}" class="form-control ${clazz}" placeholder="${placeholder}"/>
     </g:if>
     <g:else>
-        <input type="text" id="${property}" name="${prefix}${property}" value="${value}" class="form-control ${clazz}"/>
+        <input type="text"
+               id="${property}"
+               name="${prefix}${property}"
+               value="${value}"
+               class="form-control ${clazz}"
+               placeholder="${placeholder}"/>
     </g:else>
 </g:else>
 <g:if test="${errors}">
